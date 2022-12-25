@@ -3,9 +3,8 @@
 
 <br/>
 
-# DAVISY-PRO1014
 
-## Tên dự án: Phần mềm mô phỏng bài toán Tháp Hà Nội bằng đệ quy và AKT
+# Tên dự án: Phần mềm mô phỏng bài toán Tháp Hà Nội bằng đệ quy và AKT
 
 <br/>
 
