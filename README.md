@@ -4,7 +4,7 @@
 <br/>
 
 
-# Tên dự án: Phần mềm mô phỏng bài toán Tháp Hà Nội bằng đệ quy và AKT
+# Tên dự án: Phần mềm mô phỏng bài toán giải Tháp Hà Nội bằng đệ quy và AKT
 
 <br/>
 
