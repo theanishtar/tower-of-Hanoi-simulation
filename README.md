@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://tranhuudang.cf)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](http://tranhuudang.cf)
 <br/>
 
 <br/>
@@ -171,4 +171,4 @@ int main(){
 ```
 
 
-[Designed by Theanishtar in CanTho city.](tranhuudang.cf)
+[Designed by Theanishtar in CanTho city.](http://tranhuudang.cf)
