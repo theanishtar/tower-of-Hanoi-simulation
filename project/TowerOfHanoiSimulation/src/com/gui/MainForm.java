@@ -38,8 +38,6 @@ import javax.swing.plaf.basic.BasicBorders;
  *
  * @author Trần Hữu Đang
  */
-
-
 public class MainForm extends javax.swing.JFrame {
 
     List<Pile> list = new ArrayList<>();
@@ -56,10 +54,10 @@ public class MainForm extends javax.swing.JFrame {
         coc3.setVisible(false);
         coc4.setVisible(false);
         coc5.setVisible(false);
-        
+
         btnStop.setEnabled(false);
     }
-    
+
     public MainForm(int soDia) {
         initComponents();
         coc1.setVisible(false);
@@ -67,10 +65,33 @@ public class MainForm extends javax.swing.JFrame {
         coc3.setVisible(false);
         coc4.setVisible(false);
         coc5.setVisible(false);
-        
+
         snTheNum.setValue(soDia);
         initPole((int) snTheNum.getValue());
         btnStop.setEnabled(false);
+    }
+
+    void setTimer() {
+        double time = timeDone - timeStart;
+        time = (double) Math.round(time * 100) / 100;
+
+        this.times = String.valueOf(time);
+    }
+
+    double timeStart = 0, timeDone = 0;
+
+    double getTimer() {
+        times = "0";
+        int p = java.time.LocalTime.now().getMinute() * 60;
+        int s = java.time.LocalTime.now().getSecond();
+        int nano = java.time.LocalTime.now().getNano();
+
+        String temp = String.valueOf(p + s) + "." + String.valueOf(nano);
+
+        double rate = Double.valueOf(temp);
+        rate = (double) Math.round(rate * 100) / 100;
+
+        return rate;
     }
 
     void initPole(int n) {
@@ -129,9 +150,7 @@ public class MainForm extends javax.swing.JFrame {
         for (Pile pile : list) {
             System.out.println("index[" + (pile.getIndex() - 1) + "]: Coc " + pile.getIndex() + " Ten Panel: " + pile.getPn().getName());
         }
-        */
-        
-
+         */
     }
 
     void getAllPile() {
@@ -422,46 +441,20 @@ public class MainForm extends javax.swing.JFrame {
         go(pnT, 3);
     }
 
-    /*
-    synchronized void towerHanoi(int n, char a, char b, char c) {
-        new Thread(new Runnable() {
-            @Override
-            public synchronized void run() {
-                if (n == 1) {
-                    chuyenDia(1, a, c);
-                } else {
-
-                    towerHanoi(n - 1, a, c, b);
-                    while (true) {
-                        if (!runThread) {
-                            break;
-                        }
-                        System.out.print("");
-                    }
-                    chuyenDia(n, a, c);
-                    while (true) {
-                        if (!runThread) {
-                            break;
-                        }
-                        System.out.print("");
-                    }
-                    towerHanoi(n - 1, b, a, c);
-
-                }
-            }
-        }).start();
-
-    }
-     */
     void done() {
         btnStart.setEnabled(true);
         btnStop.setEnabled(false);
         sdFlash.setEnabled(true);
         snTheNum.setEnabled(true);
-        
-        new Complate(this, true, rdoDeQuy.isSelected() ? "Đệ quy" : "AKT", "5s", soBuoc).setVisible(true);
-        
-        soBuoc=0;
+        done = true;
+
+        timeDone = getTimer();
+        setTimer();
+        if (!times.equals("0")) {
+            new Complate(this, true, rdoDeQuy.isSelected() ? "Đệ quy" : "AKT", times + "s", soBuoc).setVisible(true);
+            soBuoc = 0;
+        }
+
     }
 
     void start() {
@@ -469,11 +462,27 @@ public class MainForm extends javax.swing.JFrame {
         sdFlash.setEnabled(false);
         snTheNum.setEnabled(false);
         btnStop.setEnabled(true);
+        done = false;
+
+        timeStart = getTimer();
     }
 
     void baiToan1Dia() {
         chuyenDia(1, 'A', 'C');
-        done();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                go(coc5, 3);
+                while (true) {
+                    if (!runThread) {
+                        break;
+                    }
+                    System.out.print("");
+                }
+                done();
+            }
+        }).start();
     }
 
     void baiToan2Dia() {
@@ -496,6 +505,12 @@ public class MainForm extends javax.swing.JFrame {
                     System.out.print("");
                 }
                 go(coc4, 3);
+                while (true) {
+                    if (!runThread) {
+                        break;
+                    }
+                    System.out.print("");
+                }
                 done();
             }
         }).start();
@@ -1315,7 +1330,7 @@ public class MainForm extends javax.swing.JFrame {
 
         pnManHinhMoPhong.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 1140, 120));
 
-        jPanel1.add(pnManHinhMoPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1180, 600));
+        jPanel1.add(pnManHinhMoPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1180, 630));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
