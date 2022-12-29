@@ -15,7 +15,7 @@
 
 >Màn hình ứng dụng khi chạy mô phỏng
 
-<img src="https://raw.githubusercontent.com/echhoclaptrinh/Image/main/tower-of-Hanoi-simulasion/simulation.gif" title="" alt="none" >
+<img src="https://raw.githubusercontent.com/echhoclaptrinh/Image/main/tower-of-Hanoi-simulasion/simulation.gif" title="" alt="" >
 
 <br>
 
