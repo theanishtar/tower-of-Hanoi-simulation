@@ -946,27 +946,20 @@ public class MainForm extends javax.swing.JFrame {
 
         btnGAl = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        lblTittle = new javax.swing.JLabel();
-        lblInfor = new javax.swing.JLabel();
         pnManHinhMoPhong = new javax.swing.JPanel();
-        bottom1 = new javax.swing.JLabel();
-        bottom2 = new javax.swing.JLabel();
-        bottom3 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        coc5 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        coc4 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
         coc3 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        coc4 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        coc5 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
         coc2 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         coc1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        tower1 = new javax.swing.JLabel();
-        tower2 = new javax.swing.JLabel();
-        tower3 = new javax.swing.JLabel();
+        lblInfor = new javax.swing.JLabel();
+        lblTittle = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -982,6 +975,12 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Phần mềm mô phỏng bài toán tháp Hà Nội");
@@ -990,28 +989,6 @@ public class MainForm extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(244, 244, 244));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblTittle.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
-        lblTittle.setForeground(new java.awt.Color(0, 153, 153));
-        lblTittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTittle.setText("MÔ PHỎNG BÀI TOÁN THÁP HÀ NỘI");
-        jPanel2.add(lblTittle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, 80));
-
-        lblInfor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/library/icon/businessman.png"))); // NOI18N
-        lblInfor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblInforMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblInforMouseEntered(evt);
-            }
-        });
-        jPanel2.add(lblInfor, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 10, 70, 60));
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, -1));
-
         pnManHinhMoPhong.setBackground(new java.awt.Color(255, 255, 255));
         pnManHinhMoPhong.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -1019,70 +996,6 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         pnManHinhMoPhong.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        bottom1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(bottom1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 20));
-
-        bottom2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(bottom2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 220, 20));
-
-        bottom3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(bottom3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 350, 220, 20));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("C");
-        pnManHinhMoPhong.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 370, 220, 50));
-
-        coc5.setBackground(new java.awt.Color(255, 255, 255));
-        coc5.setName("DIA 5"); // NOI18N
-
-        jLabel11.setBackground(new java.awt.Color(0, 153, 153));
-        jLabel11.setToolTipText("");
-        jLabel11.setOpaque(true);
-
-        javax.swing.GroupLayout coc5Layout = new javax.swing.GroupLayout(coc5);
-        coc5.setLayout(coc5Layout);
-        coc5Layout.setHorizontalGroup(
-            coc5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        coc5Layout.setVerticalGroup(
-            coc5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc5Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        pnManHinhMoPhong.add(coc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 220, 20));
-
-        coc4.setBackground(new java.awt.Color(255, 255, 255));
-        coc4.setName("DIA 4"); // NOI18N
-
-        jLabel10.setBackground(new java.awt.Color(0, 153, 204));
-        jLabel10.setToolTipText("");
-        jLabel10.setOpaque(true);
-
-        javax.swing.GroupLayout coc4Layout = new javax.swing.GroupLayout(coc4);
-        coc4.setLayout(coc4Layout);
-        coc4Layout.setHorizontalGroup(
-            coc4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(coc4Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        coc4Layout.setVerticalGroup(
-            coc4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        pnManHinhMoPhong.add(coc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 220, -1));
 
         coc3.setBackground(new java.awt.Color(255, 255, 255));
         coc3.setName("DIA 3"); // NOI18N
@@ -1096,18 +1009,50 @@ public class MainForm extends javax.swing.JFrame {
         coc3Layout.setHorizontalGroup(
             coc3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(coc3Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         coc3Layout.setVerticalGroup(
             coc3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        pnManHinhMoPhong.add(coc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 220, -1));
+        pnManHinhMoPhong.add(coc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 245, -1));
+
+        coc4.setBackground(new java.awt.Color(255, 255, 255));
+        coc4.setName("DIA 4"); // NOI18N
+
+        jLabel10.setBackground(new java.awt.Color(0, 153, 204));
+        jLabel10.setToolTipText("");
+        jLabel10.setOpaque(true);
+
+        javax.swing.GroupLayout coc4Layout = new javax.swing.GroupLayout(coc4);
+        coc4.setLayout(coc4Layout);
+        coc4Layout.setHorizontalGroup(
+            coc4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(coc4Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        coc4Layout.setVerticalGroup(
+            coc4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnManHinhMoPhong.add(coc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 245, -1));
+
+        coc5.setBackground(new java.awt.Color(255, 255, 255));
+        coc5.setName("DIA 5"); // NOI18N
+        coc5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel11.setToolTipText("");
+        jLabel11.setOpaque(true);
+        coc5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 0, 240, 20));
+
+        pnManHinhMoPhong.add(coc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 245, 20));
 
         coc2.setBackground(new java.awt.Color(255, 255, 255));
         coc2.setName("DIA 2"); // NOI18N
@@ -1121,18 +1066,16 @@ public class MainForm extends javax.swing.JFrame {
         coc2Layout.setHorizontalGroup(
             coc2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(coc2Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         coc2Layout.setVerticalGroup(
             coc2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        pnManHinhMoPhong.add(coc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 220, -1));
+        pnManHinhMoPhong.add(coc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 245, -1));
 
         coc1.setBackground(new java.awt.Color(255, 255, 255));
         coc1.setName("DIA 1"); // NOI18N
@@ -1146,37 +1089,48 @@ public class MainForm extends javax.swing.JFrame {
         coc1Layout.setHorizontalGroup(
             coc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(coc1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(65, 65, 65)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         coc1Layout.setVerticalGroup(
             coc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coc1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        pnManHinhMoPhong.add(coc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 220, -1));
+        pnManHinhMoPhong.add(coc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 245, -1));
 
-        tower1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(tower1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 10, 170));
+        lblInfor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/library/icon/businessman.png"))); // NOI18N
+        lblInfor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblInforMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblInforMouseEntered(evt);
+            }
+        });
+        pnManHinhMoPhong.add(lblInfor, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 10, 70, 60));
 
-        tower2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(tower2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 10, 170));
+        lblTittle.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
+        lblTittle.setForeground(new java.awt.Color(0, 153, 153));
+        lblTittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTittle.setText("MÔ PHỎNG BÀI TOÁN THÁP HÀ NỘI");
+        pnManHinhMoPhong.add(lblTittle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, 80));
 
-        tower3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 0)));
-        pnManHinhMoPhong.add(tower3, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 180, 10, 170));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("C");
+        pnManHinhMoPhong.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 340, 245, 80));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("A");
-        pnManHinhMoPhong.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 220, 50));
+        pnManHinhMoPhong.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 245, 70));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("B");
-        pnManHinhMoPhong.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 220, 50));
+        pnManHinhMoPhong.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 350, 245, 70));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 0, 0)));
@@ -1328,15 +1282,45 @@ public class MainForm extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
-        pnManHinhMoPhong.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 1140, 120));
+        pnManHinhMoPhong.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 499, 1140, -1));
 
-        jPanel1.add(pnManHinhMoPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1180, 630));
+        jLabel23.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel23.setToolTipText("");
+        jLabel23.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 140, 5, 205));
+
+        jLabel22.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel22.setToolTipText("");
+        jLabel22.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 340, 245, 5));
+
+        jLabel24.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel24.setToolTipText("");
+        jLabel24.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 5, 205));
+
+        jLabel25.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel25.setToolTipText("");
+        jLabel25.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 245, 5));
+
+        jLabel26.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel26.setToolTipText("");
+        jLabel26.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 245, 5));
+
+        jLabel27.setBackground(new java.awt.Color(204, 153, 0));
+        jLabel27.setToolTipText("");
+        jLabel27.setOpaque(true);
+        pnManHinhMoPhong.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 5, 205));
+
+        jPanel1.add(pnManHinhMoPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, 650));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1183, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1429,9 +1413,6 @@ public class MainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel bottom1;
-    private javax.swing.JLabel bottom2;
-    private javax.swing.JLabel bottom3;
     private javax.swing.ButtonGroup btnGAl;
     private com.swing.Button btnStart;
     private com.swing.Button btnStop;
@@ -1450,12 +1431,17 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblInfor;
     private javax.swing.JLabel lblTittle;
@@ -1464,8 +1450,5 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdoDeQuy;
     private javax.swing.JSlider sdFlash;
     private javax.swing.JSpinner snTheNum;
-    private javax.swing.JLabel tower1;
-    private javax.swing.JLabel tower2;
-    private javax.swing.JLabel tower3;
     // End of variables declaration//GEN-END:variables
 }
